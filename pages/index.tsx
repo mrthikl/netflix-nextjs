@@ -27,10 +27,8 @@ const Home = ({
   topRated,
   trendingNow,
 }: Props) => {
-  console.log('🚀 ~ file: index.tsx ~ line 8 ~ netflixOriginals', netflixOriginals)
-
   return (
-    <div className='relative bg-gradient-to-b from-gray-900/10 to-[#010511]'>
+    <div className={'relative bg-gradient-to-b from-gray-900/10 to-[#010511]'}>
       <Head>
         <title>Netflix</title>
         <meta name='description' content='Netflix' />
