@@ -1,11 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import { BellIcon, SearchIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import useAuth from '../hook/useAuth'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-
+  const { logout } = useAuth()
+  const router = useRouter()
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -35,9 +38,8 @@ const Header = () => {
         <SearchIcon className='hidden h-6 w-6 sm:inline' />
         <p className='hidden lg:inline'>Kids</p>
         <BellIcon className=' h-6 w-6 ' />
-        <Link href='/account'>
-          <img src='/account.png' alt='account' />
-        </Link>
+
+        <img className='cursor-pointer' onClick={() => logout()} src='/account.png' alt='account' />
       </div>
     </header>
   )

@@ -47,4 +47,4 @@ const Row = ({ title, movies }: Props) => {
   )
 }
 
-export default Row
+export default React.memo(Row)
