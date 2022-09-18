@@ -83,8 +83,8 @@ const Modal = () => {
             </div>
           </div>
         </div>
-        <div className='flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8'>
-          <div className='space-y-6 text-lg'>
+        <div className='md:flex md:space-x-16 rounded-b-md bg-[#181818] px-10 py-8'>
+          <div className='space-y-6 text-lg pb-3'>
             <div className='flex flex-col items-start gap-1  text-sm lg:flex-row '>
               <p className='font-semibold text-green-400 whitespace-nowrap '>{movie!.vote_average * 10}% Match</p>
               <p className='font-light whitespace-nowrap'>{movie?.release_date || movie?.first_air_date}</p>
@@ -94,7 +94,7 @@ const Modal = () => {
             </div>
           </div>
           <div className='flex flex-col gap-x-10 gap-y-4 font-light md:flex-row'>
-            <p className='w-5/6'>{movie?.overview}</p>
+            <p className='md:w-5/6'>{movie?.overview}</p>
             <div className='flex flex-col space-y-3 text-sm'>
               <div>
                 <span className='text-[gray]'>Genres:</span> {genres.map((genre) => genre.name).join(', ')}
