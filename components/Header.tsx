@@ -9,21 +9,21 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const { logout } = useAuth()
   const router = useRouter()
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setIsScrolled(true)
+  //     } else {
+  //       setIsScrolled(false)
+  //     }
+  //   }
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
   return (
-    <header className={`${isScrolled && 'bg-[#141414]'} header`}>
+    <header className={` bg-[#141414] header`}>
       <div className='flex items-center space-x-2 md:space-x-3'>
         <img alt='' src='/Netflix_2015_logo.svg' width={100} height={100} className='cursor-pointer object-contain' />
         <ul className='hidden space-x-4 md:flex'>
