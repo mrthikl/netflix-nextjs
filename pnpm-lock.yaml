@@ -6,6 +6,7 @@ specifiers:
   '@heroicons/react': v1
   '@hookform/resolvers': ^2.9.8
   '@mui/material': ^5.10.5
+  '@tailwindcss/line-clamp': ^0.4.2
   '@types/node': 18.7.18
   '@types/react': 18.0.20
   '@types/react-dom': 18.0.6
@@ -34,6 +35,7 @@ dependencies:
   '@heroicons/react': 1.0.6_react@18.2.0
   '@hookform/resolvers': 2.9.8_react-hook-form@7.35.0
   '@mui/material': 5.10.5_017ab6efb9a01d3014a0ca11e6f82a27
+  '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.1.8
   firebase: 9.10.0
   next: 12.3.0_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
@@ -1166,6 +1168,14 @@ packages:
     resolution: {integrity: sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==}
     dependencies:
       tslib: 2.4.0
+    dev: false
+
+  /@tailwindcss/line-clamp/0.4.2_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-HFzAQuqYCjyy/SX9sLGB1lroPzmcnWv1FHkIpmypte10hptf4oPUfucryMKovZh2u0uiS9U5Ty3GghWfEJGwVw==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
+    dependencies:
+      tailwindcss: 3.1.8
     dev: false
 
   /@types/json5/0.0.29:
